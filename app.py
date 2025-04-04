@@ -12,7 +12,7 @@ def main():
     if st.button("Calcular Aumento"):
         st.write(f"O funcionário de nome {nome}, nascido em {data_nascimento}, de estado civil {civil} e do sexo {sexo}, recebe o salário de R$ {salario:.2f}.")
 
-        if salario > 2500.00:
+        if salario < 2500.00:
             aumento = 500
             salario += aumento
             st.write(f"Funcionário deve receber aumento. Seu novo salário será R$ {salario:.2f}.")
